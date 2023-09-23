@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+body {
+  background-color: #333131;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 4000px;
+  margin-left: 560px;
+  padding: 40px;
+  background-color: rgb(78, 72, 72);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight:lighter;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Wix+Madefor+Display:wght@500&display=swap');
+p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight:normal;
+}
+
+Link {
+  color: #007bff;
+  font-family: 'Josefin Slab', serif;
+  font-weight:bold;
+  
+}
+
+.lefttext{
+  position:absolute;
+  font-family:"Unbounded";
+  color:#ffe600;
+  left:180px;
+  font-size:120px;
+  top: 190px;
+
+}
