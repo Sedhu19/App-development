@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+
+  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+}
+.logo1 {
+  font-size: 30px;
+  color:#fd8a17;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.nav-links li {
+  color:#fd8a17;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* Style the active link */
+.nav-links .active {
+  font-weight: bolder;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 15%;
+  color:#fd8a17;
+}
+.hero h1 {
+  text-align: center;
+  color:#1b1731;
+  font-size: 80px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: white;
+  }
+  ul li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
+    color:#1b1731;
+  }
+  
+}
+/* Landing.css */
+
+/* ... Previous styles ... */
+
+/* Centered button styles */
+.get-started-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  width:max-content;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Features section styles */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.feature {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  width: 25%;
+  background-color: #cfcdcd;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#1b1731;
+}
+
+.feature p {
+  font-size: 16px;
+  color:#1b1731;
+}

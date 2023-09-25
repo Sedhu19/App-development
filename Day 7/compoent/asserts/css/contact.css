@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.iXrBdFk {
+  width: 60%;
+  background: #111b55;
+  border-radius: 15px;
+  margin-left: 20%;
+  display: flex;
+  margin-top: 8%;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iXrBdFk .eTlFuKb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.iXrBdFk .eTlFuKb .vWjUhTz {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.vWjUhTz .kCoInFs::before {
+  content: '';
+  display: flex;
+  height: 8%;
+  width: 0px;
+  background: #ffffff;
+}
+
+.vWjUhTz .kCoInFs .yLfHrI {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.vWjUhTz .kCoInFs .tOhNzOe {
+  font-size: 14px;
+  padding-left: 0%;
+  color: #ffffff;
+}
+
+.iXrBdFk .eTlFuKb .HtDbYvL {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.HtDbYvL .TtXxDqJ {
+  font-size:x-large;
+  display: flex;
+  font-weight:bold;
+  color: #ffffff;
+}
+.pp{
+  
+    padding-top: 6%;
+    display: flex;
+}
+.xLhRuBo input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.xLhRuBo input[type="button"]:hover {
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .iXrBdFk {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  
+}
+
+@media (max-width: 820px) {
+  .iXrBdFk {
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .iXrBdFk .eTlFuKb {
+    flex-direction: column-reverse;
+  }
+
+  .iXrBdFk .eTlFuKb .vWjUhTz {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .iXrBdFk .eTlFuKb .vWjUhTz::before {
+    display: none;
+  }
+
+  .iXrBdFk .eTlFuKb .HtDbYvL {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.social-links {
+  
+  font-size: xx-large;
+  color: #ffffff;
+  margin-left: 40%;
+  
+
+  a {
+    font-size:x-large;
+    margin-right: 10px;
+    color: #333;
+    
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff5733;
+    }
+    
+  }
+}
