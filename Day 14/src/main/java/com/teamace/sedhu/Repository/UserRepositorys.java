@@ -8,5 +8,5 @@ import com.teamace.sedhu.Model.User;
 
 public interface UserRepositorys extends JpaRepository<User,Long> {
 
-	Optional<User>findByEmail(String username);
+	Optional<User>findByEmail(String email);
 }

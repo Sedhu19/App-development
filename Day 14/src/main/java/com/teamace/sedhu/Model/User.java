@@ -30,7 +30,8 @@ import lombok.AllArgsConstructor;
 @Table(name="_user")
 public class User implements UserDetails{
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.UUID)
+	 @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String username;
 	private String email;

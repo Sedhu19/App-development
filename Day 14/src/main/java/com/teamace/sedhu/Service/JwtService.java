@@ -32,6 +32,9 @@ public class JwtService {
 	        return claimsResolver.apply(claims);
 	    }
 	
+	   public String generateToken(UserDetails userDetails) {
+		   return createToken(new HashMap<>(), userDetails);
+	   }
 	private Claims extractAllClaims(String token) {
 		return Jwts
 				.parserBuilder()
@@ -45,9 +48,6 @@ public class JwtService {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }
-	  public String generateToken(UserDetails userDetails) {
-	        return createToken(new HashMap<>(), userDetails);
-	    }
 
 	    public String createToken(Map<String, Object> extraClaims, UserDetails userDetails) {
 	        return Jwts
@@ -60,8 +60,8 @@ public class JwtService {
 	                .compact();
 	    }
 	    public boolean isTokenValid(String token, UserDetails userDetails) {
-	        final String email = extractUsername(token);
-	        return (email.equals(userDetails.getUsername())) && !isTokenExpired(token);
+	        final String username = extractUsername(token);
+	        return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
 	    }
 
 	    private boolean isTokenExpired(String token) {
